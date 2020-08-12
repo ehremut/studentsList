@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="tApp" customModuleProvider="target">
+            <connections>
+                <outlet property="education" destination="U6Q-3i-dIp" id="dlG-0t-kSz"/>
+                <outlet property="formOfEducation" destination="2Tt-VE-7CD" id="sy2-I9-Y6K"/>
+                <outlet property="institutions" destination="wnC-ZV-HSH" id="n0C-wg-mlT"/>
+                <outlet property="listForm" destination="w7O-f5-CJ6" id="FOc-Yw-Z2l"/>
+                <outlet property="outletLookList" destination="V4h-zv-t4m" id="kJE-VD-Nbb"/>
+                <outlet property="payment" destination="dEV-bg-yXB" id="B2w-sN-hIW"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zIY-DB-54I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Образование" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6Q-3i-dIp">
+                    <rect key="frame" x="20" y="134" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="yPL-HV-jd0"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Форма обучения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Tt-VE-7CD">
+                    <rect key="frame" x="20" y="199" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Gyl-cZ-suK"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Оплата обучения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEV-bg-yXB">
+                    <rect key="frame" x="20" y="266" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="K5f-0X-6cJ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Список институтов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnC-ZV-HSH">
+                    <rect key="frame" x="20" y="333" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="0bF-5b-rwl"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Форма списка" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7O-f5-CJ6">
+                    <rect key="frame" x="20" y="402" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="rn4-t1-sil"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4h-zv-t4m">
+                    <rect key="frame" x="51" y="606" width="312" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <state key="normal" title="Посмотреть список"/>
+                    <connections>
+                        <action selector="lookList:" destination="-1" eventType="touchUpInside" id="IFG-gw-qiA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="U6Q-3i-dIp" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="1OR-vT-3JC"/>
+                <constraint firstItem="w7O-f5-CJ6" firstAttribute="top" secondItem="wnC-ZV-HSH" secondAttribute="bottom" constant="35" id="2DX-Sx-kX9"/>
+                <constraint firstItem="U6Q-3i-dIp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="90" id="DBU-aR-bOv"/>
+                <constraint firstItem="dEV-bg-yXB" firstAttribute="top" secondItem="2Tt-VE-7CD" secondAttribute="bottom" constant="33" id="Guf-uS-wBD"/>
+                <constraint firstItem="U6Q-3i-dIp" firstAttribute="leading" secondItem="2Tt-VE-7CD" secondAttribute="leading" id="TIb-MS-XWL"/>
+                <constraint firstItem="2Tt-VE-7CD" firstAttribute="top" secondItem="U6Q-3i-dIp" secondAttribute="bottom" constant="31" id="Ut3-NL-qZC"/>
+                <constraint firstItem="dEV-bg-yXB" firstAttribute="trailing" secondItem="wnC-ZV-HSH" secondAttribute="trailing" id="VMN-LM-wgv"/>
+                <constraint firstItem="wnC-ZV-HSH" firstAttribute="top" secondItem="dEV-bg-yXB" secondAttribute="bottom" constant="33" id="VX7-wE-7Zz"/>
+                <constraint firstItem="2Tt-VE-7CD" firstAttribute="leading" secondItem="dEV-bg-yXB" secondAttribute="leading" id="YAu-8w-FNa"/>
+                <constraint firstItem="wnC-ZV-HSH" firstAttribute="trailing" secondItem="w7O-f5-CJ6" secondAttribute="trailing" id="b4r-wn-FWx"/>
+                <constraint firstItem="2Tt-VE-7CD" firstAttribute="trailing" secondItem="dEV-bg-yXB" secondAttribute="trailing" id="d8q-wh-meY"/>
+                <constraint firstItem="wnC-ZV-HSH" firstAttribute="leading" secondItem="w7O-f5-CJ6" secondAttribute="leading" id="nK0-Ge-sqC"/>
+                <constraint firstItem="U6Q-3i-dIp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="pfa-oq-sGP"/>
+                <constraint firstItem="U6Q-3i-dIp" firstAttribute="trailing" secondItem="2Tt-VE-7CD" secondAttribute="trailing" id="s1C-C3-T9r"/>
+                <constraint firstItem="dEV-bg-yXB" firstAttribute="leading" secondItem="wnC-ZV-HSH" secondAttribute="leading" id="tMI-QU-QNW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>

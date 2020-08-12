@@ -1,0 +1,35 @@
+{
+    "data": [{
+            "name": "ex1",
+            "data": {
+                "text": "Foo"
+            },
+            {
+            "name": "exo",
+            },
+        }, {
+            "name": "ex2",
+            "data": {
+                "url": "https://pryaniky.com/static/img/logo-a-512.png",
+                "text": "Foz"
+            }
+        }, {
+            "name": "ex3",
+            "data": {
+                "selectedId": 1,
+                "variants": [{
+                        "id": 0,
+                        "text": "Baz"
+                    }, {
+                        "id": 1,
+                        "text": "Bar"
+                    }, {
+                        "id": 2,
+                        "text": "Baq"
+                    }
+                ]
+            }
+        }
+    ],
+    "view": ["ex1", "ex3", "ex2", "ex1", "exo"]
+}
